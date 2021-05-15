@@ -1,20 +1,20 @@
 (function () {
 	
-	var sensors = tizen.sensorservice.getAvailableSensors();
-	console.log('Available : ' + sensors.toString());
+	// var sensors = tizen.sensorservice.getAvailableSensors();
+	// console.log('Available : ' + sensors.toString());
 	
-	var heart = document.getElementById('heart');
+	// var heart = document.getElementById('heart');
 	
-	function onSuccess1() {}
-	function onSuccess() {
+	// function onSuccess1() {}
+	// function onSuccess() {
 
-	    function onchangedCB(hrmInfo) {
-	    	heart.innerHTML = hrmInfo.cumulativeTotalStepCount;
-	        console.log('pedometer:' + hrmInfo.cumulativeTotalStepCount);
-	       // tizen.humanactivitymonitor.stop('PEDOMETER');
-	    }
-	    tizen.humanactivitymonitor.start('PEDOMETER', onchangedCB);
-	}
+	//     function onchangedCB(hrmInfo) {
+	//     	heart.innerHTML = hrmInfo.cumulativeTotalStepCount;
+	//         console.log('pedometer:' + hrmInfo.cumulativeTotalStepCount);
+	//        // tizen.humanactivitymonitor.stop('PEDOMETER');
+	//     }
+	//     tizen.humanactivitymonitor.start('PEDOMETER', onchangedCB);
+	// }
 	
 //	tizen.humanactivitymonitor.start('PEDOMETER', onchangeHR);
 //	function onchangeHR(hrmInfo)
@@ -23,13 +23,13 @@
 //		console.log("Heart : " + hrmInfo.stepStatus);
 //	}
 	
-	function onError(e) {
-	    console.log("error " + JSON.stringify(e));
-	}
+	// function onError(e) {
+	//     console.log("error " + JSON.stringify(e));
+	// }
 	
 	
-	tizen.ppm.requestPermission("http://tizen.org/privilege/healthinfo",onSuccess1, onError);
-	tizen.ppm.requestPermission("http://tizen.org/privilege/location",onSuccess, onError);
+	// tizen.ppm.requestPermission("http://tizen.org/privilege/healthinfo",onSuccess1, onError);
+	// tizen.ppm.requestPermission("http://tizen.org/privilege/location",onSuccess, onError);
 	
 	window.addEventListener("tizenhwkey", function (ev) {
 		var activePopup = null,

@@ -2,15 +2,37 @@
 app adding his own styles here
  */
  
- .logo
+.logo
 {
-  position: relative;
-  top: 0;
-  left: 0;
+  position: absolute;
+  left: 130px;
+  top: 20px;
 }
 .hotdog
 {
   position: absolute;
   top: 60px;
   left: 200px;
+}
+
+.background
+{
+  background: #12275B !important;
+  border-radius: 48px;
+}
+
+.text
+{
+  font-family: Core Sans C !important;
+  font-weight: bold !important;
+  color: #C1C8FF !important;
+  left: 66px !important;
+  float: left !important;
+}
+
+.icones
+{
+  float: right;
+  width: 20%;
+  height: 20%;
 }
