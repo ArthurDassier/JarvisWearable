@@ -3,6 +3,7 @@
     <tizen:application id="GFhi4ZK7wN.JarvisList" package="GFhi4ZK7wN" required_version="5.5"/>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <feature name="http://tizen.org/feature/input.rotating_bezel"/>
     <icon src="icon.png"/>
     <name>JarvisList</name>
     <tizen:privilege name="http://tizen.org/privilege/healthinfo"/>
