@@ -347,3 +347,93 @@ body {
 	0% { width: 0; }
 	100% { width: 80%; }
   }
+
+  /*            TEST             */
+
+  body {
+	margin-top: 15% !important;
+   }
+   @font-face {
+	 font-family: 'Roboto' !important;
+	 font-style: normal !important;
+	 font-weight: 400 !important;
+	 src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype') !important;
+   }
+   body {
+	 font-family: Roboto !important;
+   }
+   #chart {
+	 width: 300px !important;
+	 height: 120px !important;
+	 margin: 30px auto 0 !important;
+	 display: block !important;
+   }
+   #chart #numbers {
+	 width: 50px !important;
+	 height: 100% !important;
+	 margin: 0 !important;
+	 padding: 0 !important;
+	 display: inline-block !important;
+	 float: left !important;
+   }
+   #chart #numbers li {
+	 text-align: right !important;
+	 padding-right: 1em !important;
+	 list-style: none !important;
+	 height: 29px !important;
+	 border-bottom: 1px solid !important;
+	 position: relative !important;
+	 bottom: 30px !important;
+   }
+   #chart #numbers li:last-child {
+	 height: 30px !important;
+   }
+   #chart #numbers li span {
+	 color: #eee !important;
+	 position: absolute !important;
+	 bottom: 0 !important;
+	 right: 10px !important;
+   }
+   #chart #bars {
+	 display: inline-block !important;
+	 background: rgba(0, 0, 0, 0.2) !important;
+	 width: 300px !important;
+	 height: 120px !important;
+	 padding: 0 !important;
+	 margin: 0 !important;
+	 box-shadow: 0 0 0 1px !important;
+   }
+   #chart #bars li {
+	 display: table-cell !important;
+	 width: 100px !important;
+	 height: 120px !important;
+	 margin: 0 !important;
+	 text-align: center !important;
+	 position: relative !important;
+   }
+   #chart #bars li .bar {
+	 display: block !important;
+	 width: 70px !important;
+	 margin-left: 5px !important;
+	 background: #FD4447 !important;
+	 position: relative !important;
+	 bottom: 0 !important;
+   }
+   #chart #bars li .bar:hover {
+	 background: #5AE !important;
+	 cursor: pointer !important;
+   }
+   #chart #bars li .bar:hover:before {
+	 color: white !important;
+	 content: attr(data-percentage) '%' !important;
+	 position: relative !important;
+	 bottom: 20px !important;
+   }
+   #chart #bars li span {
+	 color: #eee !important;
+	 width: 80% !important;
+	 position: relative !important;
+	 bottom: -2em !important;
+	 left: 10px !important;
+	 text-align: center !important;
+   }
